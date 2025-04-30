@@ -41,10 +41,10 @@ app.listen(PORT, () => {
 /* 
 app.delete('/users/:id', (req, res) => {
     const userId = req.params.id;
-    const sql = `DELETE FROM users WHERE id = ${userID}`;
+    const sql = `DELETE FROM users WHERE id = ${userId}`;
 
-    db.query(sql, userId, (error, result) => {
-        if (error) return res.status(500).send('Error al eliminar el usuario.');
+    db.query(sql, (error, result) => {
+        if (resilt.affectedRows) return res.status(500).send('Error al eliminar el usuario.');
         res.send(`User ${userId} deleted from the db.`);
     });
 });
