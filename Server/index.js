@@ -36,7 +36,7 @@ app.post('/minmax', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
-// Ejercicio 3 - Corrección del endpoint para eliminar usuario
+// Ejercicio 3 - Corrección del endpoint
 
 /* 
 app.delete('/users/:id', (req, res) => {
